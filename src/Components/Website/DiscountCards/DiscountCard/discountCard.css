@@ -1,0 +1,150 @@
+/* تحسين تصميم البطاقة مع أسماء كلاسات معقدة */
+.complexProductCard_container {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid rgba(202, 202, 202, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: 0.3s;
+    gap: 20px;
+    max-width: 600px;
+    margin: 10px;
+    flex-shrink: 0;
+    width: 600px;
+}
+
+.complexProductCard_container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* صورة المنتج */
+.complexProductCard_image {
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    background-image: url('https://via.placeholder.com/180x180');
+    background-size: cover;
+    background-position: center;
+}
+
+/* تفاصيل المنتج */
+.complexProductCard_details {
+    flex-grow: 1;
+}
+
+/* عنوان المنتج */
+.complexProductCard_title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+/* وصف المنتج */
+.complexProductCard_description {
+    font-size: 14px;
+    color: #757575;
+    line-height: 1.6;
+    margin: 0 0 10px;
+    font-family: "Lexend", serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+
+/* فاصل */
+.complexProductCard_divider {
+    border-top: 1px solid #e0e0e0;
+    margin: 10px 0;
+}
+
+/* تقييم المنتج والخصم */
+.complexProductCard_ratingDiscount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.complexProductCard_rating {
+    display: flex;
+    align-items: center;
+}
+
+.complexProductCard_goldStar {
+    color: #ffd700;
+    font-size: 18px;
+}
+
+.complexProductCard_ratingValue {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #757575;
+}
+
+.complexProductCard_discount {
+    font-family: "Lexend", serif;
+    font-weight: 600;
+    color: #e74c3c;
+}
+
+/* السعر والشراء */
+.complexProductCard_priceAndBuy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.complexProductCard_price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2ecc71;
+}
+
+.complexProductCard_buy {
+    background-color: #3ca6e4;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.complexProductCard_buy:hover {
+    background-color: #3498db;
+}
+
+.complexProductCard_buy .fa-shopping-cart {
+    margin-right: 5px;
+}
+
+@media (max-width: 700px) {
+    .complexProductCard_container {
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+        margin: 0;
+    }
+
+    .complexProductCard_image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .complexProductCard_details {
+        width: 100%;
+    }
+}

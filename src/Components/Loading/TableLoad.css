@@ -1,0 +1,34 @@
+.tableLoad{
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.15);
+    margin: 10px 0;
+}
+.tableLoad .trLoad{
+    background: #656871;
+    height: 50px;
+    position: relative;
+    margin-bottom: 1px;
+}
+
+.tableLoad .trLoad::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #656871 0%, #888b94 20%, #656871 40%, #656871 100%);
+    background-repeat: no-repeat;
+    background-size: 1000px 400px;
+    background-position: -1000px 0;
+    animation: shimmer 1s linear infinite;
+}
+
+@keyframes shimmer {
+    0%{
+      background-position: -1000px 0;
+    }
+    100%{
+      background-position: 1000px 0;
+    }
+  }

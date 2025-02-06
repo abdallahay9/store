@@ -1,0 +1,15 @@
+export const baseURL = 'http://127.0.0.1:8000/api';
+export const REGISTER =  'register'; 
+export const LOGIN = 'login';
+export const USERS = 'users';
+export const LOGOUT = 'logout';
+export const USER = 'user';
+export const EDIT = 'user/edit';
+export const CATEGORIES = "categories"; 
+export const CATEGORY = "category"; 
+export const PRODUCTS = "products";
+export const PRODUCT = "product";
+export const LASTSALE = 'latest-sale';
+export const LATEST = 'latest'
+export const TOPRATED = 'top-rated'
+export const CART = "/cart";

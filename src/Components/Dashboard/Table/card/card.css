@@ -1,0 +1,137 @@
+.card-component {
+    perspective: 1000px;
+}
+
+.inerr-card {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.inerr-card > * {
+    width: 100%;
+    height: 100%;
+    background-color: #fdfcfc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.R180 {
+    transform: rotateY(180deg);
+}
+
+
+.front {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.inerr-card p {
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+.back {
+    transform: translateZ(-0.1px) rotateY(180deg);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.back div {
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.front div.category {
+    display: flex;
+    gap: 15px;
+    flex-flow: column;
+    align-items: center;
+}
+
+.front div img {
+    max-width: 80%;
+    height: 100px;
+}
+
+.btnCard {
+    color: white;
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    user-select: none;
+    box-shadow: 0 0 4px 2px rgba(0,0,0,0.15);
+}
+
+.btnCard::after {
+    content: '';
+    width: 98%;
+    height: 90%;
+    background-color: transparent; /* اللون الأخضر المناسب */
+    position: absolute;
+    left: 1%;
+    top: 5%;
+    border-radius: 4px;
+    border: 1px solid var(--border); 
+    border-top: 7px solid var(--border-top);  /* أحمر فاتح */
+    border-bottom: 2px solid var(--border);  /* أحمر باهت */
+    pointer-events: none;
+}
+
+
+
+.category-card-topBar {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.description {
+    text-align: center;
+}
+
+.ActionsOfCard button{
+    min-width: 90px ;
+}
+.btnCard {
+    position: relative;
+}
+.product::before {
+    content: attr(dis);
+    width: 65px;
+    height: 50px;
+    background-color: green;
+    box-shadow: 4px 2px 6px 2px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 50%;
+    color: white;
+    font-size: 20px;
+    left: 0;
+    top: 0;
+}
+
+.products-title{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}

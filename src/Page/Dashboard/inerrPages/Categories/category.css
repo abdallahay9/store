@@ -1,0 +1,12 @@
+.inputImage:disabled{
+    background-color: #f5f5f5 !important;
+    pointer-events: none;
+}
+.buttonAdd , .imageNow {
+    width: 300px;
+}
+@media (max-width:500px){
+    .imageNow , .buttonAdd {
+        width: 100%;
+    }
+}

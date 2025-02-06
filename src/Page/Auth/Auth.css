@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
+.left{
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    flex-flow: column;
+    height: 100dvh;
+    gap: 10px;
+}
+.form-custom{
+    position: relative;
+    background:#f5f5f5;
+}
+.input-custom{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.15);
+}
+.icon{
+    font-size: 30px;
+    color:#8e6cf4;
+    width: 40px;
+    animation: keyframes-fill .5s;
+}
+.right{
+    width: 35%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    min-width: 325px;
+    background-image: linear-gradient(135deg , #8729e2 50%, #3c01f3);
+}
+.right h1{
+    margin: 20px 0;
+}
+.right p{
+    padding: 0 25px;
+    color: #f5f5dc;
+    font-size: 14px;
+    line-height: 23px;
+}
+.form-custom label.label , 
+.form-custom input{
+    display: block;
+}
+.form-custom input , select.input-custom{
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+     font-family: "Lato", sans-serif;
+     border-radius: 5px;
+     background:#f5f5f5;
+}
+.form-custom select.input-custom:focus{
+    box-shadow: none !important;
+}
+.form-custom label.label{
+    position: absolute;
+    left: 20px;
+    top:18px;
+}
+
+.form-custom input:focus{
+    box-shadow: none;
+}
+.form-custom input:-internal-autofill-selected {
+    box-shadow: 0 0 0 1000px #f5f5f5 inset !important; 
+}
+
+.form-control:focus{
+    background-color: transparent !important;
+}
+.form-custom input:placeholder-shown + label.label{
+    opacity: 0;
+    visibility: hidden;
+    top:20px;
+    left: 5px;
+}
+.form-custom label.label{ 
+    top:-22px;
+    left: 0;
+    font-size: 13px;
+    color: gray;
+    font-weight: bold;
+    transition: .3s;
+}
+.btn-submit { 
+    color: #f5f5f5 !important;
+    background-color: #8729e2;
+    width: 250px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    transition: .2s;
+}
+.btn-submit:hover{
+    background-color: #3d01f3d4;
+}
+
+.btn-custom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.animX{
+    animation: scaleX .2s linear;
+}
+.anim404 {
+    width: 400px;
+}
+@keyframes scaleX {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+@media (max-width:922px){
+    .right{
+        transition: .3s;
+        display: none;
+    }
+    .left{
+        transition: .3s;
+        padding: 20px;
+    }
+}
+@media (max-width:768px){
+    .btn-submit {
+        width: 100% !important;
+    }
+    .error {
+        width: 90% !important;
+    }
+    .btn-custom{
+        flex-flow: column;
+    }
+}
+
+@media (max-width:500px){
+    .error-content-404{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .anim404{
+        width: 100%;
+    }
+}
+
+
+.container1 {
+    --color: #3d01f38f ;
+    --size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+  }
+  
+  .container1 .eye {
+    animation: keyframes-fill .5s;
+  }
+  
+  .container1 .eye-slash {
+    animation: keyframes-fill .5s;
+    display: none;
+  }
+  
+  .container1 input:checked ~ .eye {
+    display: none;
+  }
+  
+  .container1 input:checked ~ .eye-slash {
+    display: block;
+  }
+  .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  @keyframes keyframes-fill {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+
+
+  /*
+  
+        Login and Register 
+  
+  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.Entered-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F8FA; /* خلفية صباحية هادئة */
+    background: linear-gradient(135deg, #F7F8FA 0%, #E2E8F0 100%);
+    font-family: 'Poppins', sans-serif; /* استخدام خط بوبينس */
+}
+
+.Entered-container > .login {
+    display: flex;
+    flex-flow: column;
+    padding: 30px 20px;
+    background-color: #FFFFFF; /* خلفية بيضاء نظيفة */
+    gap: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف */
+    width: 350px;
+}
+
+.container-mobile {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.Entered-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Entered-title h2 {
+    word-spacing: -4px;
+    text-transform: capitalize;
+    font-size: 28px;
+    color: #2E3A59; /* لون أزرق داكن للنص */
+}
+
+.Entered-title .i {
+    color: #F4C542; /* لون ذهبي للأيقونة */
+    font-size: 36px;
+}
+
+.Entered-title p {
+    color: #A1A1AA; 
+    padding-left: 4px;
+}
+
+.input-container, .Entered-submit {
+    position: relative;
+    margin-top: 24px;
+}
+
+.input-container label {
+    position: absolute;
+    left: 1px;
+    top: -22px;
+    opacity: 1;
+    transition: .3s;
+    color: #2E3A59; /* لون أزرق داكن للتسمية */
+    pointer-events: none;
+    font-size: 14px; /* حجم الخط */
+    color: #8E8E8E; /* اللون الذهبي الفاتح */
+    font-weight: 500;
+}
+
+.Entered-container > .login {
+    animation: fadeIn 0.5s ease-out;
+    transition: .3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+.input-container input {
+    width: 100%;
+    padding: 4px 10px;
+    outline: none;
+    border: 2px solid #E2E8F0; /* حدود ناعمة باللون الرمادي */
+    border-radius: 4px;
+    background-color: #F7F8FA; /* خلفية فاتحة للحقل */
+    color: #1E212D; /* لون النص داخل الحقل */
+}
+
+.input-container input[type="password"]{
+    padding-right: 30px;
+}
+
+.input-container input:placeholder-shown + label {
+    opacity: 0;
+    left: 12px;
+    top: 5px;
+}
+
+.Entered-submit {
+    padding: 10px 20px;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    background-color: #4CAF50; /* زر أخضر */
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    height: 44px;
+}
+
+.Entered-submit:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* تأثير ظل عند التفاعل */
+}
+
+.Entered-submit:active {
+    transform: scale(0.98); /* تقليص الحجم قليلاً عند الضغط على الزر */
+}
+
+.anim-login-outside {
+    display: none;
+}
+
+.input-container input.is-invalid {
+    border: 2px solid #e74c3c;  
+}
+
+.eye-pass {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: .2s;
+    animation: animAll-eye .2s;
+    color: #8A8D8F;
+}
+
+@keyframes animAll-eye {
+    0%{
+        scale: .7;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .Entered-container > .login {
+        width: 85%; /* زيادة العرض ليأخذ 85% من الشاشة */
+    }
+
+    .Entered-title h2 {
+        font-size: 24px; /* تصغير حجم الخط */
+    }
+
+    .Entered-title .i {
+        font-size: 30px; /* تصغير حجم الأيقونة */
+    }
+
+    .input-container input {
+        width: 100%; /* الحقول تأخذ العرض الكامل */
+        padding: 10px 12px; /* زيادة padding للحقول */
+    }
+
+    .Entered-submit {
+        width: 100%; /* الزر يكون بعرض كامل */
+        padding: 12px 20px; /* زيادة padding للزر */
+    }
+    .anim-login-inside {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .Entered-container > .login {
+        width: 100%; /* العرض يأخذ كامل الشاشة */
+        height: 100vh; /* إضافة 100% من ارتفاع الشاشة */
+        border-radius: 0;
+        padding: 15px;
+        box-shadow: none; 
+        gap: 50px;
+        overflow: auto;
+    }
+
+    .Entered-title h2 {
+        font-size: 22px; /* تصغير حجم الخط أكثر */
+    }
+
+    .Entered-title .i {
+        font-size: 40px; /* تصغير الأيقونة أكثر */
+    }
+
+    .input-container input {
+        padding: 12px 14px; /* زيادة المسافة داخل الحقول */
+    }
+
+    .Entered-submit {
+        padding: 14px 24px; /* تعديل حجم الزر */
+        font-size: 16px; /* تكبير حجم النص في الزر */
+    }
+    .anim-login-inside {
+        display: none;
+    }
+    .anim-login-outside{
+        display: block;
+    }
+}

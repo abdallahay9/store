@@ -1,0 +1,150 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.back-nav {
+    height: 90px;
+    background-color: #1c3a57; /* لون أزرق داكن أكثر راحة */
+}
+
+.product-container {
+    background-color: #f4f6fb; /* لون رمادي فاتح مريح */
+    height: calc(100vh - 90px);
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-container > div {
+    width: 50%;
+}
+
+
+
+.productPage .data {
+    display: flex;
+    flex-flow: column;
+    font-family: "Lexend", serif;
+    gap: 5px;
+    color: #2b2d42; /* لون رمادي غامق للكتابة */
+}
+
+.productPage .data .title {
+    font-size: clamp(20px, 5vw, 28px);
+    font-weight: 600;
+    color: #1c3a57; /* لون أزرق داكن */
+}
+
+.productPage .data .des {
+    font-size: clamp(9px, 3vw, 14px);
+    color: #6c757d; /* لون رمادي متوسط */
+}
+
+.productPage .data .About {
+    font-size: clamp(18px, 5vw, 24px);
+    color: #2b2d42;
+}
+
+.productPage .data .line {
+    width: 100%;
+    border-bottom: 1px solid #d6d8db; /* لون رمادي فاتح */
+    margin: 30px 0;
+}
+.productStar-price {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.productStar-price .star {
+    color: #f5c518; /* لون ذهبي للنجوم */
+}
+
+.productStar span {
+    font-weight: 500;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.old-price {
+    color: #b0b0b0; /* لون رمادي باهت للسعر القديم */
+    text-decoration: line-through;
+    font-size: 1rem; /* حجم أصغر */
+}
+
+.new-price {
+    color: #38a169; /* لون أخضر مريح وجذاب */
+    font-weight: bold;
+    font-size: 1.4rem; /* حجم أكبر */
+}
+
+.buy-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* مسافة بين النص والأيقونة */
+    padding: 10px 20px;
+    background-color: #ff8c00; /* لون برتقالي مريح */
+    color: white; /* نص أبيض */
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px; /* زوايا مستديرة */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-btn:hover {
+    background-color: #e67700; /* لون أغمق عند التمرير */
+    transform: scale(.98); /* تكبير بسيط عند التمرير */
+}
+
+.cart-icon {
+    font-size: 1.2rem; /* حجم مناسب للأيقونة */
+}
+
+
+.custom-gallery .image-gallery-image {
+    border-radius: 10px; /* إضافة زوايا مدورة للصورة */
+}
+
+
+.inputTheNumber {
+    width: 50px;
+    font-size: 22px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #d6d8db;
+    outline: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 1150px) {
+    .product-container {
+        padding: 50px;
+    }
+}
+
+@media (max-width:1000px){
+    .product-container {
+        flex-flow: column;
+        align-items: flex-start;
+        gap: 60px;
+        margin-bottom: 40px;
+        height: auto;
+    }
+    .product-container > div {
+        width: 100% !important;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .product-container {
+        padding: 50px 20px;
+    }
+}

@@ -1,0 +1,143 @@
+/* تحسين تصميم البطاقة */
+.siteProductCard {
+    width: 320px;
+    background-color: #ffffff; /* خلفية البطاقة البيضاء */
+    border-radius: 12px;
+    border: 1px solid rgba(202, 202, 202, 0.5); /* حدود فاتحة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.siteProductCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* صورة المنتج */
+.siteProductCard .image {
+    width: 100%;
+    height: 180px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    background-image: url('https://via.placeholder.com/320x180');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* عنوان المنتج */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.product-discount {
+    font-family: "Lexend", serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.siteProductCard .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333333; /* نص داكن */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+/* وصف المنتج */
+.siteProductCard .des {
+    font-size: 14px;
+    color: #757575; /* نص رمادي */
+    line-height: 1.6;
+    height: 70px;
+    font-family: "Lexend", serif;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+
+/* فاصل بين الأقسام */
+.siteProductCard .divider {
+    border-top: 1px solid #e0e0e0;
+    margin: 15px 0;
+    width: 100%;
+}
+
+/* تقييم المنتج */
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.goldStar {
+    color: #ffd700; /* نجمة ذهبية */
+    font-size: 20px;
+}
+
+.ratingValue {
+    font-size: 16px;
+    margin-left: 8px;
+    color: #757575;
+}
+
+/* السعر والشراء */
+.priceAndBuy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2ecc71; /* أخضر عصري */
+}
+
+.buy {
+    background-color: #3ca6e4e3; /* زر برتقالي */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy:hover {
+    background-color: #3ca6e4; /* تغيير اللون عند المرور */
+}
+
+.buy .fa-shopping-cart {
+    margin-right: 8px;
+}
+
+@media (max-width:700px){
+    .siteProductCard{
+        width: 100%;
+    }
+    .siteProductCard .image {
+        height: 280px;
+    }
+}
+
+@media (max-width:400px){
+    
+    .siteProductCard .image {
+        height: 200px;
+    }
+}

@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Ewert&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Protest+Revolution&family=Tauri&display=swap');
+.image{
+    height: 25px;
+    border-radius: 2px;
+}
+.defaultImage{
+    height: 30px;
+    border-radius: 2px;
+}
+.space{
+    display: inline-block;
+}
+.TITLE{
+    text-align: center;
+    font-family: "Tauri", serif;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 2vw + 1rem, 50px);
+    margin: 25px 0;
+    margin-bottom: 30px;
+}
+
+.TITLE {
+    text-align: center; /* محاذاة النص في الوسط */
+    font-family: "Tauri", serif; /* نوع الخط */
+    text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
+    font-size: clamp(2rem, 2vw + 1rem, 50px); /* حجم النص متجاوب */
+    margin: 25px 0 30px; /* مسافات حول النص */
+    letter-spacing: 2px; /* تباعد بين الحروف */
+    color: #333; /* لون النص */
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    -webkit-background-clip: text; /* تأثير التدرج على النص فقط */
+    -webkit-text-fill-color: transparent; /* جعل النص شفافًا ليظهر التدرج */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* ظل خفيف للنص */
+    transition: transform 0.3s ease-in-out; /* تأثير الحركة عند التفاعل */
+}
+
+table{
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 0 8px 1px rgba(0,0,0,0.15);
+    margin: 10px 0;
+}
+table tbody {
+    overflow-x: hidden;
+}
+table thead tr {
+    background-color: #038edc !important;
+    color: white !important;
+}
+table th , td{
+    padding: 10px;
+    white-space: nowrap;
+}
+table tbody tr:nth-child(even)  {
+    background-color: #edede9 !important;
+    color: #000 !important;
+}
+.table-res {
+    overflow: auto;
+}
+
+
+
+.date::-webkit-datetime-edit {
+    display: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.date{
+    width: fit-content;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.15);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.custom-date {
+    display: flex;
+    gap: 15px;
+    background-color: #f5f5f5;
+    border:  1px #00000026 solid;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 7px 10px;
+}
+.custom-date div {
+    display: flex;
+    gap: 5px;
+}
+.custom-date div input{
+    height: 100%;
+    width: 47px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.15);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.show-date-input{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.15);
+    width: fit-content;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bar1{
+    display: flex;
+}
+
+.bar1 .form-custom{
+    margin: 0;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+
+
+.container-date {
+    position: fixed;
+    z-index: 100000;
+    inset: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-date{
+    height: 300px;
+    width: 400px;
+    background-color: #f7f8fa;
+    border-radius: 12px;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.15);
+    border:  1px #0000004c solid;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    animation: scale .6s ease-in-out;
+    pointer-events: all;
+}
+
+.deleteDate{
+    font-size: 24px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.15);
+    cursor: pointer;
+    color: #dc3545;
+    background-color: white;
+    transition: .2s;
+}
+
+.deleteDate:active{
+    scale: .9;
+}
+
+.deleteLoading{
+    animation: rotation .3s infinite linear;
+}
+
+@keyframes rotation{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(1.4); 
+    }
+    35%{
+        transform: scale(.7);
+    }
+    70%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1) ;
+    }
+}
+
+.card-date p{
+    font-size: 20px;
+    color: #495057;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+@media (max-width:450px){
+    .card-date{
+        width: 90%;
+        height: 200px;
+    }
+}
+/* Pagination */
+
+
+.pageLinkClassName{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    transition: .3s;
+    color: white;
+}
+.pageLinkClassName:hover{
+    background-color: #0000002a;
+}
+
+.paginate{
+    margin: auto;
+    border-radius: 4px;
+    padding: 10px 5px;
+    background-color: #038edc;
+}

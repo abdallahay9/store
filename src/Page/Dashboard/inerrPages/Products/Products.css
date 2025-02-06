@@ -1,0 +1,66 @@
+.progress-react{
+    height: 15px;
+    border-radius: 6px;
+    background-color: #E9ECEF;
+    overflow: hidden;
+    position: relative;
+}
+.progress-react span{
+    height: 15px;
+    background-color: #0D6EFD;
+    border-radius: 3px;
+    display: block;
+    width: 0px;
+    transition: .3s;
+}
+.progress-react::before{
+    content: attr(data-num);
+    position: absolute;
+    top: 50%;
+    font-size: 12px;
+    font-weight: bolder;
+    right:50%;
+    transform: translate(-50%,-50%);
+    color:  #333333;
+}
+.inputFile{
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    border: 3px dashed #0D6EFD;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.imageBox{
+    width: 140px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+}
+.remove{
+    position: absolute;
+    top:0;
+    right:0;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px !important;
+}
+.alert{
+    position: fixed !important;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    pointer-events: none;
+    animation: hidde 2s linear;
+    border: none !important;
+}
+@keyframes hidde {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

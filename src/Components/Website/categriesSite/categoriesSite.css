@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.site-category-title{
+    color: #212529;
+    text-transform: uppercase;
+    font-family: "Lexend", serif;
+    font-size: clamp(22px , 5vw , 28px);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 120px ;
+    margin-bottom: 30px;
+}
+
+.line {
+    margin: auto;
+    border-bottom: 3.5px solid #038edc;
+    width: 60px;
+}
+
+.categoriesSite .des {
+    font-family: "Lexend", serif;
+    color: #858D96;
+    font-size: clamp(9px , 3vw , 14px);
+    width: fit-content;
+    margin: 30px auto ;
+    margin-bottom: 100px;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.categories-container {
+    display: flex;
+    gap: 13px;
+    padding:10px;
+    padding-bottom: 15px;
+    overflow: auto;
+}
+
+/* تخصيص شريط التمرير */
+.categories-container::-webkit-scrollbar {
+    width: 10px; /* عرض شريط التمرير */
+    height: 8px; /* ارتفاع شريط التمرير */
+  }
+  
+  /* تخصيص مقبض التمرير (Thumb) */
+  .categories-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right , transparent 10px, #038ddcc5 10px 98%, transparent 98%); /* لون المقبض */
+    transition: .2s;
+  }
+  
+  /* إضافة تأثير عند التمرير */
+  .categories-container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right , transparent 10px, #038edc 10px 98%, transparent 98%); /* لون المقبض */
+  }
+  
+  

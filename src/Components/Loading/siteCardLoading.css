@@ -1,0 +1,56 @@
+.cardSiteLoading{
+    width: 320px;
+    height: 426px;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+.cardSiteLoading-right {
+    display: flex;
+    flex-flow: column;
+}
+.imgSkeleton{
+    width: 300px;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.titleSkeleton{
+    width: 60%;
+    height: 30px;
+    margin: 10px 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.desSkeleton{
+    height: 70px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.desSkeleton div {
+    height: 30%;
+    border-radius: 12px;
+}
+
+.cardSiteLoading .divider {
+    margin: 15px 0;
+}
+
+.starSkeleton {
+    width: 50px;
+    height: 25px;
+    border-radius: 8px;
+}
+
+
+.btnSkeleton{
+    width: 126px;
+    height: 44px;
+    border-radius: 8px;
+}

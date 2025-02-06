@@ -1,0 +1,50 @@
+/* خلفية الصفحة */
+.error-page-404 {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8fa;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(4px);
+    z-index: 222;
+  }
+  
+  /* تنسيق محتوى الصفحة */
+  .error-content-404 {
+    text-align: center;
+    color: #e74c3c; /* اللون الأزرق الكاشف */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-code-404 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #e74c3c; /* لون أكاديمي للرقم */
+  }
+  
+  .error-message-404 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .error-description-404 {
+    font-size: 1rem;
+    color: #3498db; /* اللون الأزرق الكاشف */
+  }
+  
+  /* أنيميشن */
+  .animation-container {
+    margin-top: 20px;
+  }
+  
+  .animation-container img {
+    width: 200px; /* حجم الصورة المتحركة */
+    height: auto;
+  }
+  

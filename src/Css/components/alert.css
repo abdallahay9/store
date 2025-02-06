@@ -1,0 +1,22 @@
+.error{
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 15px 20px;
+    margin-top: 20px;
+    display: block;
+    width: 50%;
+    border-radius: 10px;
+    animation: movex 2.5s linear;
+    user-select: none;
+    text-align: center;
+}
+@keyframes movex {
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(-50%,-100px );
+    }
+}

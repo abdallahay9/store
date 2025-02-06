@@ -1,0 +1,47 @@
+/* ErrorPage.css */
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f8fa; /* خلفية فاتحة */
+    color: #333; /* لون نص داكن لزيادة التباين */
+    font-family: Arial, sans-serif;
+  }
+  
+  .error-content {
+    text-align: center;
+  }
+  
+  .error-code {
+    font-size: 8rem;
+    margin: 0;
+    color: #d9534f; /* لون نص مميز للرمز */
+  }
+  
+  .error-message {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+    color: #d9534f; /* لون نص مميز للرسالة */
+  }
+  
+  .error-description {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #555; /* لون نص أغمق للوصف */
+  }
+  
+  .back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #f7f8fa; /* لون نص أفتح للرابط */
+    background-color: #007bff; /* لون خلفية أزرق للرابط */
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .back-home:hover {
+    background-color: #0056b3; /* لون خلفية أغمق عند التمرير */
+  }
+  
